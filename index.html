@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Survey Phasmophobia</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="01a">
+        <h1 id="title">Survey Phasmophobia</h1>
+        <p id="description">Terima kasih telah membantu kami berkembang</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Nama:<input placeholder="isi namamu di sini" required type="text" name="name" id="name"></label>
+                <label id="email-label">Email:<input placeholder="isi emailmu di sini" required type="email" name="email" id="email"></label>
+                <label id="number-label">Umur (<small>optional</small>):<input type="number" placeholder="isi umurmu saat ini" min="13" max="60" name="number" id="number"></label>
+                <label>Device yang Digunakan:
+                <select id="dropdown">
+                    <option value="">Pilih Device</option>
+                    <option value="1">PC</option>
+                    <option value="2">Playstation</option>
+                    <option value="3">XBOX</option>
+                </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Apakah kamu menyukai gimnya?</label>
+                <label><input type="radio" checked name="rate" value="bagus"> Tentu</label>
+                <label><input type="radio" name="rate" value="biasa"> Biasa</label>
+                <label><input type="radio" name="rate" value="jelek"> Tidak</label>
+            </fieldset>
+            <fieldset>
+                <label>Apa yang kamu sukai di Phasmophobia</label>
+                <select id="dropdown">
+                    <option value="">Pilih opsi</option>
+                    <option value="1">Gameplay</option>
+                    <option value="2">Atmosfer</option>
+                    <option value="3">Mekanisme</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>Apa yang harus kami kembangkan? (<small>pilih semua jika perlu</small>)</label>
+                <label><input class="inline" type="checkbox" value="gameplay"> Gampeplay</label>
+                <label><input class="inline" type="checkbox" value="atmosfer"> Atmosfer</label>
+                <label><input class="inline" type="checkbox" value="mekanisme"> Mekanisme</label>
+            </fieldset>
+            <fieldset>
+                <label>Adakah kesan dan saran? <textarea></textarea></label>
+            </fieldset>
+            <button id="submit">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>
